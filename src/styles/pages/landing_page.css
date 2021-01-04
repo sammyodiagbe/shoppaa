@@ -1,0 +1,102 @@
+div.landing-page header.intro-header {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
+}
+
+div.landing-page header.intro-header section.left-section {
+  background: slateblue;
+  color: #fff;
+  position: relative;
+}
+
+div.landing-page header.intro-header section.left-section div.writeup {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.landing-page header.intro-header section.left-section div.writeup h1 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+}
+
+div.landing-page header.intro-header section.left-section div.writeup p {
+  font-size: 1.3em;
+}
+
+div.landing-page header.intro-header section.left-section div.writeup a.get-started {
+  padding: 15px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+  background: #4e8a27;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+div.landing-page header.intro-header section.right-section {
+  position: relative;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div {
+  width: 300px;
+  padding: 15px 0;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div input {
+  padding: 15px 5px;
+  width: 100%;
+  font-size: 0.9em;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  position: relative;
+  border-bottom: 2px solid slateblue;
+  background: transparent;
+  outline: none;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div.auth-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div.auth-container a {
+  font-size: 14px;
+  color: #444;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div.auth-container a:hover {
+  text-decoration: underline;
+}
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div button {
+  background: #4e8a27;
+  color: #fff;
+  padding: 13px 30px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+}
+/*# sourceMappingURL=landing_page.css.map */

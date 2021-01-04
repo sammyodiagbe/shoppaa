@@ -1,0 +1,87 @@
+@import "../varialbles";
+
+div.landing-page {
+  header.intro-header {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 1fr;
+    section.left-section {
+      background: slateblue;
+      color: #fff;
+      position: relative;
+      div.writeup {
+        position: absolute;
+        width: 500px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        h1 {
+          font-size: 2.8em;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 1.3em;
+        }
+
+        a.get-started {
+          padding: 15px 30px;
+          margin-top: 20px;
+          display: inline-block;
+          color: #fff;
+          background: $primary-color;
+          font-size: 16px;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    section.right-section {
+      position: relative;
+      div.login-form-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        form {
+          div {
+            width: 300px;
+            padding: 15px 0;
+            input {
+              padding: 15px 5px;
+              width: 100%;
+              font-size: 0.9em;
+              transition: 300ms;
+              position: relative;
+              border-bottom: 2px solid slateblue;
+              background: transparent;
+              outline: none;
+            }
+            &.auth-container {
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+              a {
+                font-size: 14px;
+                color: #444;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            button {
+              background: $primary-color;
+              color: #fff;
+              padding: 13px 30px;
+              font-size: 0.9em;
+              font-weight: bold;
+              border-radius: 5px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
