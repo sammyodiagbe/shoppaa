@@ -1,0 +1,108 @@
+@import "../varialbles";
+div.signup-page {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  height: 100vh;
+
+  section.left {
+    background: slateblue;
+    position: relative;
+    color: #fff;
+    div.writeup {
+      position: absolute;
+      width: 500px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      h1 {
+        font-size: 2.8em;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 1.3em;
+      }
+    }
+  }
+  section.right {
+    div.tab {
+      height: 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      //   &::after {
+      //     position: absolute;
+      //     content: "";
+      //     bottom: 0;
+      //     left: 10px;
+      //     height: 4px;
+      //     width: calc(50% - 10px);
+      //     background: slateblue;
+      //     border-radius: 10px;
+      //   }
+      button.tab-btn {
+        font-weight: bold;
+        font-size: 1em;
+
+        &.active {
+          background: transparent;
+        }
+      }
+    }
+
+    div.auth-body {
+      padding: 20px 30px;
+      position: relative;
+      div.auth {
+        position: absolute;
+        width: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        form {
+          div {
+            padding: 10px 0;
+            p.lb {
+              font-size: 12px;
+              margin-bottom: 5px;
+              span.required {
+                color: red;
+              }
+            }
+            &.check-container {
+              display: flex;
+              align-items: flex-start;
+              input {
+                width: auto;
+                margin-right: 10px;
+              }
+
+              label {
+                font-size: 12px;
+              }
+            }
+            input {
+              padding: 15px 5px;
+              padding-left: 10px;
+              width: 100%;
+              background: transparent;
+              border: 1px solid lightgrey;
+
+              &:focus {
+                border: 1px solid rgb(236, 18, 225);
+              }
+            }
+
+            button {
+              display: block;
+              padding: 15px;
+              background: $primary-color;
+              color: #fff;
+              border-radius: $border-radius-sm;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -70,6 +70,10 @@ div.landing-page {
                 }
               }
             }
+
+            // p.not-a-member {
+            //   font-size: 0.9em;
+            // }
             button {
               background: $primary-color;
               color: #fff;
@@ -78,6 +82,9 @@ div.landing-page {
               font-weight: bold;
               border-radius: 5px;
               outline: none;
+            }
+            p.not-a-member {
+              font-size: 14px;
             }
           }
         }

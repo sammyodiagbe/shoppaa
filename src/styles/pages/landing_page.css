@@ -99,4 +99,8 @@ div.landing-page header.intro-header section.right-section div.login-form-contai
   border-radius: 5px;
   outline: none;
 }
+
+div.landing-page header.intro-header section.right-section div.login-form-container form div p.not-a-member {
+  font-size: 14px;
+}
 /*# sourceMappingURL=landing_page.css.map */

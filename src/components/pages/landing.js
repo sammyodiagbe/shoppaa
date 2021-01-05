@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "../../styles/pages/landing_page.css";
 
 class LandingPage extends Component {
@@ -36,6 +37,12 @@ class LandingPage extends Component {
                 <div className="auth-container">
                   <button>Login</button>
                   <a href="#forgot-password">forgot password</a>
+                </div>
+                <div>
+                  <p className="not-a-member">
+                    Not a member?,{" "}
+                    <Link to="/signup">Create your acccount</Link>
+                  </p>
                 </div>
               </form>
             </div>

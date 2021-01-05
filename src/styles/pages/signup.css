@@ -1,0 +1,114 @@
+div.signup-page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 1fr;
+      grid-template-columns: 600px 1fr;
+  height: 100vh;
+}
+
+div.signup-page section.left {
+  background: slateblue;
+  position: relative;
+  color: #fff;
+}
+
+div.signup-page section.left div.writeup {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+div.signup-page section.left div.writeup h1 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+}
+
+div.signup-page section.left div.writeup p {
+  font-size: 1.3em;
+}
+
+div.signup-page section.right div.tab {
+  height: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+div.signup-page section.right div.tab button.tab-btn {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+div.signup-page section.right div.tab button.tab-btn.active {
+  background: transparent;
+}
+
+div.signup-page section.right div.auth-body {
+  padding: 20px 30px;
+  position: relative;
+}
+
+div.signup-page section.right div.auth-body div.auth {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.signup-page section.right div.auth-body div.auth form div {
+  padding: 10px 0;
+}
+
+div.signup-page section.right div.auth-body div.auth form div p.lb {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+div.signup-page section.right div.auth-body div.auth form div p.lb span.required {
+  color: red;
+}
+
+div.signup-page section.right div.auth-body div.auth form div.check-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+div.signup-page section.right div.auth-body div.auth form div.check-container input {
+  width: auto;
+  margin-right: 10px;
+}
+
+div.signup-page section.right div.auth-body div.auth form div.check-container label {
+  font-size: 12px;
+}
+
+div.signup-page section.right div.auth-body div.auth form div input {
+  padding: 15px 5px;
+  padding-left: 10px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid lightgrey;
+}
+
+div.signup-page section.right div.auth-body div.auth form div input:focus {
+  border: 1px solid #ec12e1;
+}
+
+div.signup-page section.right div.auth-body div.auth form div button {
+  display: block;
+  padding: 15px;
+  background: #4e8a27;
+  color: #fff;
+  border-radius: 6px;
+}
+/*# sourceMappingURL=signup.css.map */
