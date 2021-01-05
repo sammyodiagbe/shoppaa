@@ -31,7 +31,7 @@ div.signup-page section.left div.writeup p {
 }
 
 div.signup-page section.right div.tab {
-  height: 70px;
+  height: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
