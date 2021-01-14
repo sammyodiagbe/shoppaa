@@ -50,15 +50,18 @@ div.signup-page section.right div.tab button.tab-btn.active {
 
 div.signup-page section.right div.auth-body {
   padding: 20px 30px;
+  padding-top: 40px;
   position: relative;
+  min-height: 500px;
 }
 
 div.signup-page section.right div.auth-body div.auth {
   position: absolute;
   width: 400px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 div.signup-page section.right div.auth-body div.auth form div {

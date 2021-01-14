@@ -89,7 +89,7 @@ const Buyer = () => {
             required
             onChange={handleInputChange}
           />
-          <label htmlFor="accept-terms">
+          <label htmlFor="accept">
             By clicking this, you agree to the terms and agreement
           </label>
         </div>

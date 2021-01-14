@@ -53,12 +53,15 @@ div.signup-page {
 
     div.auth-body {
       padding: 20px 30px;
+      padding-top: 40px;
       position: relative;
+      min-height: 500px;
       div.auth {
         position: absolute;
         width: 400px;
         left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
         form {
           div {
             padding: 10px 0;
