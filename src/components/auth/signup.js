@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/pages/signup.css";
 import Buyer from "./buyer";
 import Seller from "./seller";
 
 const Signup = () => {
+  const [activeTab, setActiveTab] = useState(1);
   return (
     <div className="signup-page">
       <section className="left">
@@ -17,11 +18,21 @@ const Signup = () => {
       </section>
       <section className="right">
         <div className="tab">
-          <button className="tab-btn buyer active">I want to Buy</button>
-          <button className="tab-btn buyer">I want to Sell</button>
+          <button
+            className={`tab-btn buyer ${activeTab === 1 && "active"}`}
+            onClick={() => setActiveTab(1)}
+          >
+            I want to Buy
+          </button>
+          <button
+            className={`tab-btn buyer ${activeTab === 2 && "active"}`}
+            onClick={() => setActiveTab(2)}
+          >
+            I want to Sell
+          </button>
         </div>
         <div className="auth-body">
-          <Seller />
+          {activeTab === 1 ? <Buyer /> : <Seller />}
         </div>
       </section>
     </div>

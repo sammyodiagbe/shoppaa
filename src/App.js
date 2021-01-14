@@ -5,12 +5,12 @@ import Signup from "./components/auth/signup";
 function App() {
   return (
     <Router>
-      <Switch>
-        <div className="App">
+      <div className="App">
+        <Switch>
           <Route path="/" exact component={LandingPage} />
           <Route path="/signup" exact component={Signup} />
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </Router>
   );
 }
