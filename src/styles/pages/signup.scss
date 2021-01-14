@@ -87,7 +87,7 @@ div.signup-page {
               width: 100%;
               background: transparent;
               border: 1px solid lightgrey;
-
+              font-size: 0.9em;
               &:focus {
                 border: 1px solid rgb(236, 18, 225);
               }
@@ -96,6 +96,7 @@ div.signup-page {
             button {
               display: block;
               padding: 15px;
+              font-size: 0.9em;
               background: $primary-color;
               color: #fff;
               border-radius: $border-radius-sm;
