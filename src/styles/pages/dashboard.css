@@ -35,6 +35,21 @@ div.dashboard div.right nav.navigation div.details-container a.upgrade-plan {
   border-radius: 30px;
 }
 
+div.dashboard div.right main.content-container {
+  background: #efefef;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 250px;
+      grid-template-columns: 1fr 250px;
+}
+
+div.dashboard div.right main.content-container div.main p.title,
+div.dashboard div.right main.content-container div.updates p.title {
+  font-weight: bold;
+}
+
 div.dashboard div.left {
   z-index: 30;
   -webkit-box-shadow: 5px 10px 9px rgba(0, 0, 0, 0.1);

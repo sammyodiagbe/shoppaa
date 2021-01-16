@@ -27,6 +27,22 @@ div.dashboard {
         }
       }
     }
+
+    // main contents
+    main.content-container {
+      background: #efefef;
+      min-height: calc(100vh - 60px);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 250px;
+
+      div.main,
+      div.updates {
+        p.title {
+          font-weight: bold;
+        }
+      }
+    }
   }
   div.left {
     z-index: 30;

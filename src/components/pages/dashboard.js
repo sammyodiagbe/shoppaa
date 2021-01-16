@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../styles/pages/dashboard.css";
+import Main from "../partials/main";
+import Updates from "../partials/updates";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -32,6 +34,10 @@ class Dashboard extends Component {
               </a>
             </div>
           </nav>
+          <main className="content-container">
+            <Main />
+            <Updates />
+          </main>
         </div>
       </div>
     );
