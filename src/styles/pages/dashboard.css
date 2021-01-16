@@ -1,0 +1,55 @@
+div.dashboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1fr;
+      grid-template-columns: 300px 1fr;
+  height: 100vh;
+}
+
+div.dashboard div.right nav.navigation {
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+div.dashboard div.right nav.navigation div.details-container {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+div.dashboard div.right nav.navigation div.details-container span {
+  font-size: 14px;
+}
+
+div.dashboard div.right nav.navigation div.details-container a.upgrade-plan {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: slateblue;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+div.dashboard div.left {
+  z-index: 30;
+  -webkit-box-shadow: 5px 10px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 10px 9px rgba(0, 0, 0, 0.1);
+}
+
+div.dashboard div.left div.top {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+
+div.dashboard div.left div.top a.brand {
+  font-size: 1.5em;
+  color: #444;
+  font-weight: bold;
+}
+/*# sourceMappingURL=dashboard.css.map */

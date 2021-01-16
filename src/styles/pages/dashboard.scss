@@ -1,0 +1,47 @@
+div.dashboard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  div.right {
+    nav.navigation {
+      height: 60px;
+      background: #fff;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      position: relative;
+      div.details-container {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        span {
+          font-size: 14px;
+        }
+        a.upgrade-plan {
+          margin: 0 10px;
+          padding: 10px 20px;
+          font-size: 14px;
+          background: slateblue;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+  div.left {
+    z-index: 30;
+    box-shadow: 5px 10px 9px rgba(0, 0, 0, 0.1);
+
+    div.top {
+      height: 60px;
+      line-height: 60px;
+      padding: 0 10px;
+      //   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      a.brand {
+        font-size: 1.5em;
+        color: #444;
+        font-weight: bold;
+      }
+    }
+  }
+}
